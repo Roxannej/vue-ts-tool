@@ -1,0 +1,28 @@
+{
+  "include": [
+    "hooks/",
+    "__test__/"
+  ],
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "sourceMap": true,
+    "removeComments": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "checkJs": false,
+    "allowJs": false,
+    "rootDir": "./",
+    "baseUrl": "./",
+    "paths": {
+      "@xus/vue-reuse": [
+        "src/"
+      ]
+    },
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}

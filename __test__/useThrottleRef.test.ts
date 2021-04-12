@@ -9,5 +9,11 @@ describe('test useThrottleRef', () => {
   test('should be run first time when run', () => {
     const throttleValue = useThrottleRef(0, 500)
     throttleValue.value = 1
+    throttleValue.value = 2
+    throttleValue.value = 3
+    expect(throttleValue.value).toBe(1)
+    nextTask(() => {
+      expect(throttleValue.value).toBe(1)
+    }, 550)
   })
 })
